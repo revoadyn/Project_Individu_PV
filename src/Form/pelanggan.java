@@ -419,10 +419,6 @@ private DefaultTableModel tabmode;
         dispose();
     }//GEN-LAST:event_btnKeluarActionPerformed
 
-    private void txCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txCariActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txCariActionPerformed
-
     private void btnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpanActionPerformed
         String jenis = null;
         if(rLaki.isSelected()){
@@ -450,6 +446,10 @@ private DefaultTableModel tabmode;
         datatable();
     }//GEN-LAST:event_btnSimpanActionPerformed
 
+    private void txIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txIDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txIDActionPerformed
+
     private void tblPlggnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblPlggnMouseClicked
         int bar = tblPlggn.getSelectedRow();
         String a = tblPlggn.getValueAt(bar, 0).toString();
@@ -457,7 +457,7 @@ private DefaultTableModel tabmode;
         String c = tblPlggn.getValueAt(bar, 2).toString();
         String d = tblPlggn.getValueAt(bar, 3).toString();
         String e = tblPlggn.getValueAt(bar, 4).toString();
-        
+
         txID.setText(a);
         txNama.setText(b);
         if ("Laki - laki".equals(c)){
@@ -479,9 +479,9 @@ private DefaultTableModel tabmode;
         }
     }//GEN-LAST:event_txCariKeyPressed
 
-    private void txIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txIDActionPerformed
+    private void txCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txCariActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txIDActionPerformed
+    }//GEN-LAST:event_txCariActionPerformed
 
     /**
      * @param args the command line arguments
