@@ -22,6 +22,7 @@ private DefaultTableModel tabmode;
      */
     public barang() {
         initComponents();
+        setLocationRelativeTo(this);
         kosong();
         aktif();
         datatable();
@@ -250,6 +251,11 @@ private DefaultTableModel tabmode;
         jLabel5.setText("Harga Beli (Rp)");
 
         CJenis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Makanan", "Minuman" }));
+        CJenis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CJenisActionPerformed(evt);
+            }
+        });
 
         txHJual.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txHJual.addActionListener(new java.awt.event.ActionListener() {
@@ -457,6 +463,10 @@ private DefaultTableModel tabmode;
     private void txHJualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txHJualActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txHJualActionPerformed
+
+    private void CJenisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CJenisActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CJenisActionPerformed
 
     /**
      * @param args the command line arguments

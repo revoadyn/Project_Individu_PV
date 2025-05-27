@@ -21,6 +21,7 @@ private DefaultTableModel tabmode;
      */
     public kasir() {
         initComponents();
+        setLocationRelativeTo(this);
         kosong();
         aktif();
         datatable();
